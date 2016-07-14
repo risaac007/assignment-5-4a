@@ -1,0 +1,111 @@
+# assignment-5-4a
+
+
+Axis.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package banks;
+
+/**
+ *
+ * @author hp1
+ */
+public class Axis extends Banks{
+    public void getRateofInterest(){
+    System.out.println("The rate of interest of Axis Bank is 9%");
+        
+        
+      
+}
+}
+
+
+Icici.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package banks;
+
+/**
+ *
+ * @author hp1
+ */
+public class Icici extends Banks {
+    public void getRateofInterest(){
+        System.out.println("The Rate of interest of ICICI Bank is 7%");
+    }
+}
+
+
+
+Sbi.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package banks;
+
+/**
+ *
+ * @author hp1
+ */
+public class Sbi extends Banks {
+    public void getRateofInterest(){
+ System.out.println("The rate of interest of SBI Bank is 8%");
+        
+        
+}
+}
+
+
+
+Banks.java
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package banks;
+
+/**
+ *
+ * @author hp1
+ */
+public class Banks {
+
+    public void getRateofInterest(){
+        System.out.println("Rate of interest of different banks");
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Banks b1=new Sbi();
+        Banks b2=new Icici();
+        Banks b3=new Axis();
+        Banks b4=new Banks();
+        b4.getRateofInterest();
+        b1.getRateofInterest();
+        b2.getRateofInterest();
+        b3.getRateofInterest();
+        
+        
+    }
+    
+}
+
+
+
